@@ -5,6 +5,22 @@
     <link rel="icon" type="image/svg+xml" href="/src/images/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fresh Harvest Box</title>
+    <script type="module" src="/src/main.js"></script>
   </head>
-  <body></body>
+  <body>
+    <inclide src="./src/partials/header.html"></inclide>
+
+    <main>
+      <include src="./src/partials/hero.html"></include>
+      <include src="./src/partials/how-it-works.html"></include>
+      <include src="./src/partials/fruits.html"></include>
+      <include src="./src/partials/contacts.html"></include>
+    </main>
+
+    <include src="./src/partials/footer.html"></include>
+
+    <!-- Modals -->
+    <include src="./src/partials/your-order.html"></include>
+    <include src="./src/partials/thank-you.html"></include>
+  </body>
 </html>
