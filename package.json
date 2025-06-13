@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "@vituum/vite-plugin-posthtml": "^1.1.0",
+    "modern-normalize": "^3.0.1",
     "sass": "^1.89.2",
     "vite": "^6.3.5"
   }
