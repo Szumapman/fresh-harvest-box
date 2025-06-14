@@ -8,7 +8,7 @@ html {
 body {
     font-family: $main-font;
     font-size: 0.875rem;
-    letter-spacing: -4%;
+    letter-spacing: 0.04em;
 }
 
 h1,
@@ -70,5 +70,6 @@ textarea {
 @media screen and (min-width: 1280px) {
     .container {
         max-width: 1280px;
+        padding: 0 32px;
     }
 }
