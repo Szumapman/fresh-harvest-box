@@ -10,10 +10,6 @@
     margin: 0 auto -60px;
     padding-top: 56px;
     position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: $text-shadow;
-    font-weight: 500;
 }
 
 .hero-header-mobile,
@@ -22,6 +18,10 @@
     z-index: 99;
     max-width: 100%;
     margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-shadow: $text-shadow;
 }
 
 .hero-header-mobile {
