@@ -1,0 +1,57 @@
+@use "../variables" as *;
+
+.hero {
+    max-width: 100%;
+}
+
+.hero-header-wrap {
+    background-color: $red-color;
+    color: $fair-color;
+    margin: 106px auto -60px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: $text-shadow;
+    font-weight: 500;
+}
+
+.hero-heder-mobile,
+.hero-header {
+    position: relative;
+    z-index: 999;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.hero-header-mobile {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+}
+
+.hero-header {
+    display: none;
+}
+
+@media screen and (min-width: $tablet) {
+    .hero-header {
+        display: block;
+    }
+    
+    .hero-header-mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
+    .hero-header {
+        font-size: 3.125rem;
+        line-height: 3.375rem;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .hero-header {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
