@@ -1,13 +1,14 @@
 @use "../variables" as *;
 
-.hero {
+.hero-wrap {
     max-width: 100%;
+    background-color: $red-color;
+    color: $fair-color;   
 }
 
 .hero-header-wrap {
-    background-color: $red-color;
-    color: $fair-color;
-    margin: 106px auto -60px;
+    margin: 0 auto -60px;
+    padding-top: 56px;
     position: relative;
     text-align: center;
     text-transform: uppercase;
@@ -15,10 +16,10 @@
     font-weight: 500;
 }
 
-.hero-heder-mobile,
+.hero-header-mobile,
 .hero-header {
     position: relative;
-    z-index: 999;
+    z-index: 99;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -32,13 +33,31 @@
     display: none;
 }
 
+.hero-header-img-strawberries {
+    position: absolute;
+    top: 56px;
+    right: 0;
+    z-index: 9;
+    width: 56px;
+    height: 56px;
+    filter: blur(2px); // I changed from 4px to 2px, beacause it looks more similar to the design
+}
+
 @media screen and (min-width: $tablet) {
     .hero-header {
         display: block;
     }
     
-    .hero-header-mobile {
+    .hero-header-mobile{
         display: none;
+    }
+
+    .hero-header-img-strawberries {
+        top: 50px;
+        right: 40px;
+        width: 108px;
+        height: 108px;
+        filter: blur(4px); // I changed from 8px to 4px, beacause it looks more similar to the design
     }
 }
 
@@ -53,5 +72,12 @@
     .hero-header {
         font-size: 4rem;
         line-height: 4rem;
+    }
+
+    .hero-header-img-strawberries {
+        top: 40px;
+        right: 220px;
+        width: 120px;
+        height: 120px;
     }
 }
