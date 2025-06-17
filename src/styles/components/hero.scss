@@ -7,6 +7,7 @@
 }
 
 .hero-header-wrap {
+    max-width: 335px;
     margin: 0 auto -60px;
     padding-top: 56px;
     position: relative;
@@ -43,7 +44,21 @@
     filter: blur(2px); // I changed from 4px to 2px, beacause it looks more similar to the design
 }
 
+.hero-header-img-bananas {
+    position: absolute;
+    bottom: 10px;
+    left: -18px;
+    z-index: 9;
+    width: 66px;
+    height: 44px;
+    rotate: 20deg;
+    filter: blur(2px); // I changed from 4px to 2px, beacause it looks more similar to the design
+}
+
 @media screen and (min-width: $tablet) {
+    .hero-header-wrap {
+        max-width: 736px;
+    }
     .hero-header-tablet-desktop {
         display: block;
     }
@@ -59,6 +74,15 @@
         height: 108px;
         filter: blur(4px); // I changed from 8px to 4px, beacause it looks more similar to the design
     }
+
+    .hero-header-img-bananas {
+        top: 160px;
+        left: 20px;
+        width: 132px;
+        height: 90px;
+        rotate: 20deg;
+        filter: blur(4px); // I changed from 8px to 4px, beacause it looks more similar to the design
+    }
 }
 
 @media screen and (min-width: $tablet) and (max-width: $desktop) {
@@ -69,6 +93,9 @@
 }
 
 @media screen and (min-width: $desktop) {
+    .hero-header-wrap {
+        max-width: 1240px;
+    }
     .hero-header-tablet-desktop {
         font-size: 4rem;
         line-height: 4rem;
@@ -79,5 +106,12 @@
         right: 220px;
         width: 120px;
         height: 120px;
+    }
+
+    .hero-header-img-bananas {
+        top: 190px;
+        left: 175px;
+        width: 183.21px;
+        height: 124.61px;
     }
 }
