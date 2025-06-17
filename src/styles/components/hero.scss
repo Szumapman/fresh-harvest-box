@@ -8,7 +8,7 @@
 
 .hero-header-wrap {
     max-width: 335px;
-    margin: 0 auto -60px;
+    margin: 0 auto;
     padding-top: 56px;
     position: relative;
 }
@@ -23,9 +23,6 @@
     text-transform: uppercase;
     font-weight: 500;
     text-shadow: $text-shadow;
-}
-
-.hero-header-mobile {
     font-size: 1.75rem;
     line-height: 1.75rem;
 }
@@ -46,13 +43,36 @@
 
 .hero-header-img-bananas {
     position: absolute;
-    bottom: 10px;
-    left: -18px;
+    top: 116px;
+    left: -9px;
     z-index: 9;
     width: 66px;
     height: 44px;
     rotate: 20deg;
     filter: blur(2px); // I changed from 4px to 2px, beacause it looks more similar to the design
+}
+
+.hero-heder-girl-img-wrap {
+    position: relative;
+    margin: -58px auto 84px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-header-img-girl {
+    position: relative;
+    border-radius: 500px;
+    width: 311px;
+    height: 484px;
+}
+
+.hero-girl-vector-frame-wrap {
+    position: absolute;
+    top: -11px;
+}
+.hero-girl-frame {
+    width: 335px;
+    height: 509px;
 }
 
 @media screen and (min-width: $tablet) {
@@ -83,10 +103,27 @@
         rotate: 20deg;
         filter: blur(4px); // I changed from 8px to 4px, beacause it looks more similar to the design
     }
+
+    .hero-heder-girl-img-wrap {
+        margin: -112px auto 84px;
+    }
+
+    .hero-header-img-girl {    
+        width: 452px;
+        height: 702px;
+    }
+
+    .hero-girl-vector-frame-wrap {
+        top: -23px;   }
+
+    .hero-girl-frame {
+        width: 486px;
+        height: 742px;
+    }
 }
 
 @media screen and (min-width: $tablet) and (max-width: $desktop) {
-    .hero-header-tablet-desktop {
+    .hero-header {
         font-size: 3.125rem;
         line-height: 3.375rem;
     }
@@ -96,7 +133,7 @@
     .hero-header-wrap {
         max-width: 1240px;
     }
-    .hero-header-tablet-desktop {
+    .hero-header {
         font-size: 4rem;
         line-height: 4rem;
     }
@@ -113,5 +150,9 @@
         left: 175px;
         width: 183.21px;
         height: 124.61px;
+    }
+
+    .hero-heder-girl-img-wrap {
+        margin: -132px auto 84px;
     }
 }
