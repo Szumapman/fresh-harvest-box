@@ -1,9 +1,9 @@
 @use "../variables" as *;
 
-.hero-wrap {
+.hero-wrap.container {
     max-width: 100%;
     background-color: $red-color;
-    color: $fair-color;   
+    color: $fair-color;  
 }
 
 .hero-header-wrap {
@@ -12,7 +12,7 @@
     position: relative;
 }
 
-.hero-header-mobile,
+
 .hero-header {
     position: relative;
     z-index: 99;
@@ -29,7 +29,7 @@
     line-height: 1.75rem;
 }
 
-.hero-header {
+.hero-header-tablet-desktop {
     display: none;
 }
 
@@ -44,7 +44,7 @@
 }
 
 @media screen and (min-width: $tablet) {
-    .hero-header {
+    .hero-header-tablet-desktop {
         display: block;
     }
     
@@ -62,14 +62,14 @@
 }
 
 @media screen and (min-width: $tablet) and (max-width: $desktop) {
-    .hero-header {
+    .hero-header-tablet-desktop {
         font-size: 3.125rem;
         line-height: 3.375rem;
     }
 }
 
 @media screen and (min-width: $desktop) {
-    .hero-header {
+    .hero-header-tablet-desktop {
         font-size: 4rem;
         line-height: 4rem;
     }
