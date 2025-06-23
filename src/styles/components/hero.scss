@@ -91,6 +91,127 @@
     transform: rotate(-14deg);
 }
 
+.hero-shop-button:hover,
+.hero-shop-button:focus,
+.hero-shop-button:active {
+    color: $green-color;
+}
+
+.hero-fruits-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-description-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.75rem;
+}
+
+.first {
+    margin-top: 84px;
+}
+
+ .second {
+    margin-top: 44px;
+}
+
+.hero-description-text {
+    max-width: 279px;
+    font-weight: 400;
+    margin: 0 auto;
+    line-height: 1.125rem;
+    text-shadow: $text-shadow;
+    padding: 0 0.5px;
+}
+
+.hero-description-fruit-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 249px;
+    height: 387px;
+    border-radius: 500px;
+}
+
+.green-background {
+    background-color: $green-color;
+}
+
+.yellow-background {
+    background-color: $yellow-color;
+}
+
+.hero-fruit-header {
+    padding-top: 28px;
+    font-family: $main-font;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: $text-shadow;
+}
+
+.tropical-watermelon-img {
+    width: 200px;
+    height: 172px;
+    margin: 61px auto 2px;
+}
+
+.baskets-with-strawberries-img {
+    width: 162px;
+    height: 185px;
+    margin: 19px auto 17px
+}
+
+.hero-fruit-decription-text {
+    width: 155px;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: $text-shadow;
+}
+
+.hero-anchors-list {
+    max-width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 44px;
+    font-style: normal;
+}
+
+.hero-anchor-item {
+    border: 1px solid $fair-color;
+    border-radius: 1000px;
+    height: 38px;
+    padding: 12px 32px;
+}
+
+.hero-anchor-item:nth-child(odd) {
+    width: 125px;
+}
+
+.hero-anchor-item:nth-child(even) {
+    width: 132px;
+}
+
+.hero-anchor-item h3 {
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: $text-shadow;
+}
+
 @media screen and (min-width: $tablet) {
     .hero-header-wrap {
         max-width: 736px;
@@ -134,6 +255,43 @@
     .hero-girl-frame {
         width: 486px;
         height: 742px;
+    }
+
+    .hero-fruits-wrap {
+        flex-direction: row;
+        justify-content: center;
+        gap: 142px;
+        margin-top: 44px;
+    }
+
+    .first {
+        margin-top: 0;
+        align-items: flex-end;
+        justify-content: start;
+    }
+
+    .second {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 44px;
+        margin-top: 0;
+    }
+
+    .hero-anchors-list {
+        justify-content: flex-end;
+        margin: 0 auto;
+    }
+
+    .hero-anchor-item:nth-child(2) {
+        width: 133px;
+    }
+    
+    .hero-anchor-item:nth-child(3) {
+        width: 115px;
+    }
+    
+    .hero-anchor-item:nth-child(4) {
+        width: 110px;
     }
 }
 
