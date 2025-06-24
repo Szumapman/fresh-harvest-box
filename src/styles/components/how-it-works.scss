@@ -1,0 +1,148 @@
+@use "../variables" as *;
+
+.how-it-works-section {
+    margin: 0 auto;
+    padding: 80px 0 0;
+}
+
+.how-it-works-header-wrap {
+    max-width: 335px;
+    margin: 0 auto 44px;
+    text-align: center;
+    text-shadow: $text-shadow;
+}
+
+.how-it-works-header {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.how-it-works-text {
+    margin: 14px auto 0;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+}
+
+.how-it-works-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin: 44px auto 0;
+    padding: 0;
+}
+
+.how-it-works-item {
+    width: 335px;
+    height: 112px;
+    background-color: $fair-color;
+    border-radius: 20px;
+}
+
+.how-it-works-item-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.875rem;
+    width: 295px;
+    height: 72px;
+    margin: 20px;
+}
+
+.how-it-works-item-cta {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 200px;
+    min-width: 136px;
+    height: 48px;
+    padding: 12px 0;
+}
+
+.how-it-works-item-cta.first {
+    background-color: $red-color;
+}
+
+.how-it-works-item-cta.second {
+    background-color: $green-color;
+}
+
+.how-it-works-item-cta.third {
+    background-color: $yellow-color;
+}
+
+.how-it-works-item-text {
+    color: $dark-color;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+}
+
+.how-it-works-gif {
+    margin: 44px auto 0;
+    width: 335px;
+    height: 476px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+@media screen and (min-width: $tablet) {
+    .how-it-works-section {
+        padding: 137px 0 0;
+    }
+
+    .how-it-works-header-wrap {
+        max-width: 624px;
+    }
+
+    .how-it-works-header {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+    }
+
+    .how-it-works-text {
+        width: 509px;
+    }
+
+    .how-it-works-list {
+        width: 389px;
+        gap: 1.5rem;
+    }
+
+    .how-it-works-item {
+        width: 389px;
+        height: 128px;
+    }
+
+    .how-it-works-item-wrap {
+        width: 349px;
+        height: 48px;
+        margin: 40px 20px;
+    }
+
+    .how-it-works-gif {
+        margin: 80px auto 0;
+        width: 704px;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .how-it-works-section {
+        padding: 273px 0 0;
+    }
+
+    .how-it-works-list {
+        width: 1215px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .how-it-works-gif {
+        width: 860px;
+    }
+}
