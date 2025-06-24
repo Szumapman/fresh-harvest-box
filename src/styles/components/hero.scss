@@ -108,11 +108,11 @@
     gap: 2.75rem;
 }
 
-.first {
+.hero-description-wrap.first {
     margin-top: 84px;
 }
 
- .second {
+.hero-description-wrap.second {
     margin-top: 44px;
 }
 
@@ -262,13 +262,13 @@
         margin-top: 44px;
     }
 
-    .first {
+    .hero-description-wrap.first {
         margin-top: 0;
         align-items: flex-end;
         justify-content: flex-start;
     }
 
-    .second {
+        .hero-description-wrap.second {
         flex-direction: column-reverse;
         align-items: flex-start;
         justify-content: flex-end;
@@ -339,13 +339,13 @@
         gap: 658px;
     }
 
-    .first {
+    .hero-description-wrap.first {
         padding-top: 72px;
         align-items: flex-end;
         justify-content: flex-start;
     }
 
-    .second {
+    .hero-description-wrap.second {
         width: 266px;
         padding-bottom: 96px;
     }
