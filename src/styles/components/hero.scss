@@ -87,6 +87,7 @@
     text-transform: uppercase;
     text-shadow: $text-shadow;
     transform: rotate(-14deg);
+    z-index: 999;
 }
 
 .hero-shop-button:hover,
