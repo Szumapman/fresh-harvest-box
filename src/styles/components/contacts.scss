@@ -1,0 +1,142 @@
+@use "../variables" as *;
+
+.contacts-section {
+    margin: 0 auto;
+    padding: 80px 0 80px;
+}
+
+.contacts-header {
+    position: relative;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: $text-shadow;
+    text-align: center;
+    z-index: 1;
+}
+
+.contacts-images-wrap {
+    display: flex;
+    align-items: center;
+    margin: -43px auto 0;
+}
+
+.contacts-image {
+    width: 335px;
+    height: 476px;
+    border-radius: 20px;
+}
+
+.contacts-image.berries,
+.contacts-form-wrap {
+    display: none;
+}
+
+@media screen and (min-width: $tablet) {
+    .contacts-section {
+        padding: 144px 0 144px;   
+    }
+
+    .contacts-header {
+        margin: 0 auto 0 28px;
+        max-width: 648px;
+        font-size: 3.375rem;
+        line-height: 3.375rem;
+    }
+
+    .contacts-images-wrap {
+        margin: -29px auto 0;
+        gap: 16px;
+    }
+    .contacts-image.berries,
+    .contacts-form-wrap {
+        display: block;   
+    }
+
+    .contacts-image {
+        width: 344px;
+        height: 480px;
+    }
+
+    .contacts-form-wrap {
+        margin: 80px auto 0;
+        max-width: 492px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .contacts-form-text {
+        line-height: 1.125rem;
+    }
+
+    .contacts-form {
+        position: relative;
+    }
+
+    .contacts-form-input {
+        width: 292px;
+        height: 48px;
+        border-radius: 100px;
+        border: 1px solid rgba(255, 255, 255, 1);
+        padding-left: 24px;
+        background: $red-color;
+        color: $fair-color;
+    }
+
+    .contacts-form-input::placeholder {
+        color: $fair-color;
+        text-transform: capitalize;
+        opacity: 0.5;
+    }
+
+    .contacts-form-btn {
+        position: absolute;
+        right: 0px;
+        width: 102px;
+        height: 48px;
+        border-radius: 100px;
+        background-color: $green-color;
+        color: $fair-color;
+        text-transform: capitalize;
+        transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    }
+
+    .contacts-form-btn:hover,
+    .contacts-form-btn:focus,
+    .contacts-form-btn:active {
+        color: $green-color;
+        background-color: $fair-color;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .contacts-section {
+        padding: 150x 0 150px;   
+    }
+
+    .contacts-header {
+        margin: 0 auto 0 238px;
+        max-width: 740px;
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .contacts-images-wrap {
+        margin: -39px auto 0;
+        gap: 24px;
+    }
+
+    .contacts-image.melon {
+        width: 792px;
+        height: 502px;
+    }
+
+    .contacts-image.berries {
+        width: 400px;
+        height: 502px;
+    }
+}
