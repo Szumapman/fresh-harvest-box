@@ -93,6 +93,13 @@
         opacity: 0.5;
     }
 
+    .contacts-form-input:hover,
+    .contacts-form-input:focus,
+    .contacts-form-input:active {
+        border: 1px solid $green-color;
+        outline: none;
+    }
+
     .contacts-form-btn {
         position: absolute;
         right: 0px;
