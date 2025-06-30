@@ -3,10 +3,14 @@
 .contacts-section {
     margin: 0 auto;
     padding: 80px 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contacts-header {
     position: relative;
+    max-width: 335px;
     font-size: 2rem;
     line-height: 2rem;
     font-weight: 500;
@@ -18,7 +22,7 @@
 
 .contacts-images-wrap {
     display: flex;
-    align-items: center;
+    justify-content: center;
     margin: -43px auto 0;
 }
 
@@ -31,6 +35,10 @@
 .contacts-image.berries,
 .contacts-form-wrap {
     display: none;
+}
+
+.contacts-form-input.error {
+    border: 2px solid red;
 }
 
 @media screen and (min-width: $tablet) {
