@@ -1,0 +1,73 @@
+<section class="contacts-section" id="contacts">
+  <div class="container contacts-wrap">
+    <h2 class="contacts-header">Fresh Harvest Box has got you covered</h2>
+    <div class="contacts-images-wrap">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/contacts-melon-desktop.webp    1x,
+            ./images/contacts-melon-desktop@2x.webp 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/contacts-melon-tablet.webp    1x,
+            ./images/contacts-melon-tablet@2x.webp 2x
+          "
+        />
+        <img
+          class="contacts-image melon"
+          srcset="
+            ./images/contacts-melon-mobile.webp    1x,
+            ./images/contacts-melon-mobile@2x.webp 2x
+          "
+          src="./images/contacts-melon-mobile.webp"
+          alt="a fresh melon"
+        />
+      </picture>
+
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/contacts-berries-desktop.webp    1x,
+            ./images/contacts-berries-desktop@2x.webp 2x
+          "
+        />
+        <img
+          class="contacts-image berries"
+          srcset="
+            ./images/contacts-berries-tablet.webp    1x,
+            ./images/contacts-berries-tablet@2x.webp 2x
+          "
+          src="./images/contacts-berries-tablet.webp"
+          alt="fresh berries"
+        />
+      </picture>
+    </div>
+
+    <div class="contacts-form-wrap">
+      <p class="contacts-form-text">
+        Our boxes are packed with delicious, nutritious fruits and vegetables,
+        perfect for anyone looking to eat healthier or support local farmers.
+        Order your box today and start enjoying the best that nature has to
+        offer!
+      </p>
+      <form class="contacts-form" id="contacts-form" novalidate>
+        <label class="contacts-form-label">
+          <input
+            class="contacts-form-input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="enter email..."
+            required
+          />
+        </label>
+        <button type="submit" class="contacts-form-btn">send</button>
+      </form>
+    </div>
+  </div>
+</section>
