@@ -1,0 +1,61 @@
+@use "../variables" as *;
+
+.thank-you-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 335px;
+    background-color: $thank-you-background-color;
+    color: $fair-color;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.button-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    color: $fair-color;
+}
+
+.icon-close {
+    width: 24px;
+    height: 24px;
+}
+
+.thank-you-modal-image {
+    margin: 40px auto 0;
+    width: 207px;
+    height: 176px;
+}
+
+.thank-you-modal-text-wrap {
+    margin: 0 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.thank-you-modal-header {
+    font-family: $main-font;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.thank-you-modal-text {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+}
