@@ -10,9 +10,9 @@ const init = () => {
     const mobileBasketIcon = document.querySelector('.icon-basket-mobile-wrap');
     const contactForm = document.getElementById('contacts-form');
     const emailInput = document.getElementById('email');
+    const thankYouModal = document.getElementById('thank-you');
+    const closeThankYouModal = document.getElementById('close-thank-you-modal');
 
-    console.log('emailInput', emailInput);
-    console.log('contactForm', contactForm);
     hamburgerButton.addEventListener('click', () => {
         mobileNavList.classList.toggle('active');
         closeIcon.classList.toggle('active');
@@ -34,14 +34,19 @@ const init = () => {
     });
 
     contactForm.addEventListener('submit', e => {
-        console.log('error?');
         if (!emailInput.checkValidity()) {
             e.preventDefault();
-            console.log('error');
             emailInput.classList.add('error');
         } else {
+            e.preventDefault();
+            emailInput.value = '';
             emailInput.classList.remove('error');
+            thankYouModal.classList.remove('is-hidden');
         }
+    });
+
+    closeThankYouModal.addEventListener('click', () => {
+        thankYouModal.classList.add('is-hidden');
     });
 }
 
