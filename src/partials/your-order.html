@@ -1,0 +1,195 @@
+<div class="backdrop" id="your-order">
+  <div class="your-order-modal">
+    <div class="your-order-header-wrap">
+      <h2 class="your-order-header">your order</h2>
+      <button type="button" class="button button-close" id="close-your-order">
+        <svg class="icon icon-close" id="close">
+          <use href="./images/sprite.svg#icon-close-white"></use>
+        </svg>
+      </button>
+    </div>
+    <ul class="your-order-list">
+      <li class="your-order-item">
+        <div class="your-order-basket-description-wrap">
+          <h3 class="your-order-basket-name">strawberry basket</h3>
+          <p class="your-order-basket-description">plant</p>
+        </div>
+        <div class="your-order-basket-image-wrap">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/your-order-strawberry-basket-desktop.webp    1x,
+                ./images/your-order-strawberry-basket-desktop@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/your-order-strawberry-basket-tablet.webp    1x,
+                ./images/your-order-strawberry-basket-tablet@2x.webp 2x
+              "
+            />
+            <img
+              class="your-order-basket-image"
+              alt="fresh strawberry basket"
+              srcset="
+                ./images/your-order-strawberry-basket-mobile.webp    1x,
+                ./images/your-order-strawberry-basket-mobile@2x.webp 2x
+              "
+              src="./images/your-order-strawberry-basket-mobile.webp"
+            />
+          </picture>
+        </div>
+        <div class="your-order-checkbox">
+          <label class="your-order-checkbox" for="strawberry-basket">
+            <input
+              type="checkbox"
+              id="strawberry-basket"
+              name="strawberry-basket"
+              class="your-order-checkbox-input"
+            />
+            <svg class="icon icon-check" aria-hidden="true" focusable="false">
+              <use href="./images/sprite.svg#icon-checkbox-pick"></use>
+            </svg>
+          </label>
+        </div>
+      </li>
+      <li class="your-order-item">
+        <div class="your-order-basket-description-wrap">
+          <h3 class="your-order-basket-name">apple basket</h3>
+          <p class="your-order-basket-description">plant</p>
+        </div>
+        <div class="your-order-basket-image-wrap">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/your-order-apple-basket-desktop.webp    1x,
+                ./images/your-order-apple-basket-desktop@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/your-order-apple-basket-tablet.webp    1x,
+                ./images/your-order-apple-basket-tablet@2x.webp 2x
+              "
+            />
+            <img
+              class="your-order-basket-image"
+              alt="fresh apple basket"
+              srcset="
+                ./images/your-order-apple-basket-mobile.webp    1x,
+                ./images/your-order-apple-basket-mobile@2x.webp 2x
+              "
+              src="./images/your-order-apple-basket-mobile.webp"
+            />
+          </picture>
+        </div>
+        <div class="your-order-checkbox">
+          <label class="your-order-checkbox" for="apple-basket">
+            <input
+              type="checkbox"
+              id="apple-basket"
+              name="apple-basket"
+              class="your-order-checkbox-input"
+            />
+            <svg class="icon icon-check" aria-hidden="true" focusable="false">
+              <use href="./images/sprite.svg#icon-checkbox-pick"></use>
+            </svg>
+          </label>
+        </div>
+      </li>
+      <li class="your-order-item">
+        <div class="your-order-basket-description-wrap">
+          <h3 class="your-order-basket-name">fruits basket</h3>
+          <p class="your-order-basket-description">plant</p>
+        </div>
+        <div class="your-order-basket-image-wrap">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/your-order-fruits-basket-desktop.webp    1x,
+                ./images/your-order-fruits-basket-desktop@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/your-order-fruits-basket-tablet.webp    1x,
+                ./images/your-order-fruits-basket-tablet@2x.webp 2x
+              "
+            />
+            <img
+              class="your-order-basket-image"
+              alt="fresh fruits basket"
+              srcset="
+                ./images/your-your-order-fruits-basket-mobile.webp 1x,
+                ./images/your-order-fruits-basket-mobile@2x.webp   2x
+              "
+              src="./images/your-order-fruits-basket-mobile.webp"
+            />
+          </picture>
+        </div>
+        <div class="your-order-checkbox">
+          <label class="your-order-checkbox" for="fruits-basket">
+            <input
+              type="checkbox"
+              id="fruits-basket"
+              name="fruits-basket"
+              class="your-order-checkbox-input"
+            />
+            <svg class="icon icon-check" aria-hidden="true" focusable="false">
+              <use href="./images/sprite.svg#icon-checkbox-pick"></use>
+            </svg>
+          </label>
+        </div>
+      </li>
+    </ul>
+    <form class="your-order-form">
+      <label class="your-order-form-label">
+        <input
+          class="your-order-form-input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="enter full name..."
+          required
+        />
+      </label>
+      <label class="your-order-form-label">
+        <input
+          class="your-order-form-input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="enter email..."
+          required
+        />
+      </label>
+      <label class="your-order-form-label">
+        <input
+          class="your-order-form-input"
+          name="card"
+          id="card"
+          type="text"
+          inputmode="numeric"
+          pattern="[0-9\s]{13,19}"
+          autocomplete="cc-number"
+          placeholder="enter card..."
+          required
+        />
+      </label>
+      <label class="your-order-form-label">
+        <textarea
+          name="comment"
+          id="comment"
+          placeholder="enter comments..."
+        ></textarea>
+      </label>
+      <button type="submit" class="your-order-form-button">submit</button>
+    </form>
+  </div>
+</div>
