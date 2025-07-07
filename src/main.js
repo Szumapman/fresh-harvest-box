@@ -42,11 +42,13 @@ const init = () => {
             emailInput.value = '';
             emailInput.classList.remove('error');
             thankYouModal.classList.remove('is-hidden');
+            document.body.classList.add('no-scroll');
         }
     });
 
     closeThankYouModal.addEventListener('click', () => {
         thankYouModal.classList.add('is-hidden');
+        document.body.classList.remove('no-scroll');
     });
 }
 
