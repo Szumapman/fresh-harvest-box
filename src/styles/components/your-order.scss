@@ -120,8 +120,8 @@
 }
 
 .icon-check {
-    width: 12px;
-    height: 12px;
+    width: 6px;
+    height: 6px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -201,4 +201,86 @@
     font-weight: 400;
     color: $fair-color;
     text-transform: capitalize;
+}
+
+@media screen and (min-width: $tablet) {
+    .your-order-modal {
+        width: 704px;
+        background-image: url("../../images/your-order-girl-tablet.webp"), url("../../images/your-order-girl-tablet@2x.webp");
+        background-size: 469px 467px;
+        background-position: right -179px bottom -3px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .your-order-header-wrap {
+        width: 624px;
+    }
+    
+    .your-order-header {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+    }
+    
+    .button-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 28px;
+        height: 28px;
+    }
+    
+    .icon-close {
+        width: 28px;
+        height: 28px;
+    }
+
+    .your-order-list {
+        width: 624px;
+        flex-direction: row;
+    }
+
+    .your-order-item {
+        width: 200px;
+        flex-direction: column;
+    }
+
+    .your-order-item:nth-child(-n+3) {
+        gap: 4px;
+    }
+
+    .your-order-basket-description-wrap {
+        margin: 40px auto 0 20px; 
+    }
+
+    .your-order-basket-image {
+        justify-self: center;
+        margin-top: 0;
+        margin-bottom: 14px;
+    }
+
+    .your-order-checkbox-input {
+        width: 20px;
+        height: 20px;
+    }
+
+    .icon-check {
+        width: 8px;
+        height: 8px;
+    }
+
+    .your-order-form {
+        align-self: flex-start;
+        margin-left: 40px;
+        width: 360px;
+    }
+
+        
+    .your-order-form-input {
+        height: 48px;
+    }
+
+    .your-order-form-textarea {
+        height: 145px;
+    }
 }
