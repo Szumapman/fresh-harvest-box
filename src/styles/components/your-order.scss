@@ -142,7 +142,7 @@
     flex-direction: column;
     gap: 14px;
     width: 295px;
-    padding: 0 0 20px;
+    margin-bottom: 20px;
 }
 
 .your-order-form-textarea,
@@ -167,6 +167,7 @@
 .your-order-form-textarea {
     height: 132px;
     border-radius: 20px;
+    margin-bottom: 3px;
 }
 
 .your-order-form-textarea::placeholder,
@@ -215,6 +216,7 @@
 
     .your-order-header-wrap {
         width: 624px;
+        padding: 40px 0 0;
     }
     
     .your-order-header {
@@ -272,6 +274,7 @@
     .your-order-form {
         align-self: flex-start;
         margin-left: 40px;
+        margin-bottom: 40px;
         width: 360px;
     }
 
@@ -282,5 +285,44 @@
 
     .your-order-form-textarea {
         height: 145px;
+    }
+
+    .your-order-form-button {
+        width: 114px;
+        height: 48px;
+        padding: 15px 35px;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .your-order-modal {
+        width: 891px;
+        background-image: url("../../images/your-order-girl-desktop.webp"), url("../../images/your-order-girl-desktop@2x.webp");
+        background-size: 471px 458px;
+        background-position: right 0 bottom 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .your-order-header-wrap {
+        width: 811px;
+    }
+
+    .your-order-list {
+        width: 811px;
+        gap: 20px;
+    }
+    
+    .your-order-item {
+        width: 257px;
+    }
+
+    .your-order-basket-description-wrap {
+        gap: 8px;
+    }
+
+    .your-order-basket-name {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
     }
 }
