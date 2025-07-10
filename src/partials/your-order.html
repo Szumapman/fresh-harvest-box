@@ -1,4 +1,4 @@
-<div class="backdrop" id="your-order">
+<div class="backdrop is-hidden" id="your-order">
   <div class="your-order-modal">
     <div class="your-order-header-wrap">
       <h2 class="your-order-header">your order</h2>
@@ -148,7 +148,7 @@
         </div>
       </li>
     </ul>
-    <form class="your-order-form">
+    <form class="your-order-form" novalidate>
       <label class="your-order-form-label">
         <input
           class="your-order-form-input"
@@ -176,8 +176,6 @@
           id="card"
           type="text"
           inputmode="numeric"
-          pattern="[0-9\s]{13,19}"
-          autocomplete="cc-number"
           placeholder="enter card..."
           required
         />
