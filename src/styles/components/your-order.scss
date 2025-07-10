@@ -1,0 +1,330 @@
+@use "../variables" as *;
+
+.your-order-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 335px;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+    background-color: $fair-color;
+    color: $red-color;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.your-order-header-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 295px;
+    padding: 20px 20px 0;
+}
+
+.your-order-header {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.button-close {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: $red-color;
+}
+
+.your-order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 295px;
+}
+
+.your-order-item {
+    display: flex;
+    justify-content: start;
+    border-radius: 20px;
+    color: $fair-color;
+    position: relative;
+}
+
+.your-order-item:first-child {
+    background-color: #F8766B;
+    gap: 5px;
+}
+
+.your-order-item:nth-child(2) {
+    background-color: #EDD251;
+    gap: 30px;
+}
+
+.your-order-item:nth-child(3) {
+    background-color: #9DC262;
+    gap: 31px;
+}
+
+.your-order-basket-description-wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 2px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 55px;
+}
+
+.your-order-basket-name {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.your-order-basket-description {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.your-order-basket-image {
+    object-fit: cover;
+    object-position: center;
+    margin-top: 16px;
+}
+
+.your-order-checkbox-wrap {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+}
+
+.your-order-checkbox-input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid $fair-color;
+    border-radius: 4px;
+    background-color: inherit;
+    cursor: pointer;
+    display: block;
+    position: relative;
+
+}
+
+.icon-check {
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    pointer-events: none;
+    fill: currentColor;
+}
+
+.your-order-checkbox-input:checked+.icon-check {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.your-order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 295px;
+    margin-bottom: 20px;
+}
+
+.your-order-form-textarea,
+.your-order-form-input {
+    width: 100%;
+    padding: 14px 24px;
+    opacity: 0.7;
+    border: 1px solid $dark-color;
+    background-color: $fair-color;
+    color: $dark-color;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 400;
+    outline: none;
+}
+
+.your-order-form-input {
+    height: 46px;
+    border-radius: 100px;
+}
+
+.your-order-form-textarea {
+    height: 132px;
+    border-radius: 20px;
+    margin-bottom: 3px;
+}
+
+.your-order-form-textarea::placeholder,
+.your-order-form-input::placeholder {
+    color: $dark-color;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.your-order-form-textarea:focus,
+.your-order-form-input:focus {
+    border: 2px solid $green-color;
+    opacity: 1;
+}
+
+.your-order-form-textarea.error,
+.your-order-form-input.error {
+    border: 2px solid $red-color;
+    opacity: 1;
+}
+
+.your-order-form-button {
+    width: 92px;
+    height: 42px;
+    border-radius: 100px;
+    background-color: #9DC162;
+    padding: 12px 24px;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+    color: $fair-color;
+    text-transform: capitalize;
+}
+
+@media screen and (min-width: $tablet) {
+    .your-order-modal {
+        width: 704px;
+        background-image: url("../../images/your-order-girl-tablet.webp"), url("../../images/your-order-girl-tablet@2x.webp");
+        background-size: 469px 467px;
+        background-position: right -179px bottom -3px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .your-order-header-wrap {
+        width: 624px;
+        padding: 40px 0 0;
+    }
+    
+    .your-order-header {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+    }
+    
+    .button-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 28px;
+        height: 28px;
+    }
+    
+    .icon-close {
+        width: 28px;
+        height: 28px;
+    }
+
+    .your-order-list {
+        width: 624px;
+        flex-direction: row;
+    }
+
+    .your-order-item {
+        width: 200px;
+        flex-direction: column;
+    }
+
+    .your-order-item:nth-child(-n+3) {
+        gap: 4px;
+    }
+
+    .your-order-basket-description-wrap {
+        margin: 40px auto 0 20px; 
+    }
+
+    .your-order-basket-image {
+        justify-self: center;
+        margin-top: 0;
+        margin-bottom: 14px;
+    }
+
+    .your-order-checkbox-input {
+        width: 20px;
+        height: 20px;
+    }
+
+    .icon-check {
+        width: 8px;
+        height: 8px;
+    }
+
+    .your-order-form {
+        align-self: flex-start;
+        margin-left: 40px;
+        margin-bottom: 40px;
+        width: 360px;
+    }
+
+        
+    .your-order-form-input {
+        height: 48px;
+    }
+
+    .your-order-form-textarea {
+        height: 145px;
+    }
+
+    .your-order-form-button {
+        width: 114px;
+        height: 48px;
+        padding: 15px 35px;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .your-order-modal {
+        width: 891px;
+        background-image: url("../../images/your-order-girl-desktop.webp"), url("../../images/your-order-girl-desktop@2x.webp");
+        background-size: 471px 458px;
+        background-position: right 0 bottom 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .your-order-header-wrap {
+        width: 811px;
+    }
+
+    .your-order-list {
+        width: 811px;
+        gap: 20px;
+    }
+    
+    .your-order-item {
+        width: 257px;
+    }
+
+    .your-order-basket-description-wrap {
+        gap: 8px;
+    }
+
+    .your-order-basket-name {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+    }
+}
