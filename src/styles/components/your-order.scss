@@ -6,6 +6,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 335px;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
     background-color: $fair-color;
     color: $red-color;
     text-align: center;
