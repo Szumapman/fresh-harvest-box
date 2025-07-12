@@ -4,7 +4,7 @@ import posthtml from '@vituum/vite-plugin-posthtml';
 import posthtmlInclude from 'posthtml-include';
 
 export default defineConfig({
-    base: './',
+    base: '/fresh-harvest-box/',
     root: '.',
 
     build: {
