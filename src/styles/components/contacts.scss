@@ -83,6 +83,7 @@
 
     .contacts-form {
         position: relative;
+        overflow: visible;
     }
 
     .contacts-form-input {
@@ -93,6 +94,8 @@
         padding-left: 24px;
         background: $red-color;
         color: $fair-color;
+        z-index: 1;
+        position: static;
     }
 
     .contacts-form-input::placeholder {
@@ -111,6 +114,7 @@
     .contacts-form-btn {
         position: absolute;
         right: 0px;
+        top: 0px;
         width: 102px;
         height: 48px;
         border-radius: 100px;
@@ -118,6 +122,7 @@
         color: $fair-color;
         text-transform: capitalize;
         transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        z-index: 2;
     }
 
     .contacts-form-btn:hover,
