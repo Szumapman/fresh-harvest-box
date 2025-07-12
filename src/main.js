@@ -42,6 +42,7 @@ const init = () => {
     const mobileNavList = document.querySelector('.nav-mobile-list');
     const mobileNavLinks = document.querySelectorAll('.nav-mobile-list .nav-link');
     const mobileBasketIcon = document.querySelector('.icon-basket-mobile-wrap');
+    const basketIcon = document.querySelector('.icon-basket');
 
     const contactForm = document.getElementById('contacts-form');
     const contactEmailInput = document.getElementById('contact-email');
@@ -81,10 +82,12 @@ const init = () => {
         document.body.classList.remove('no-scroll');
     });
 
-    orderButton.addEventListener('click', () => {
-        yourOrderModal.classList.remove('is-hidden');
-        document.body.classList.add('no-scroll');
-    });
+    [mobileBasketIcon, basketIcon, orderButton].forEach(btn => {
+        btn.addEventListener('click', () => {
+            yourOrderModal.classList.remove('is-hidden');
+            document.body.classList.add('no-scroll');
+        });
+    })
 
     closeYourOrderModal.addEventListener('click', () => {
         yourOrderModal.classList.add('is-hidden');
