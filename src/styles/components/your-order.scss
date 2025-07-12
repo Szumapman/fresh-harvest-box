@@ -6,8 +6,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 335px;
-    max-height: calc(100vh - 40px);
+    max-height: calc(100vh - 80px);
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     background-color: $fair-color;
     color: $red-color;
     text-align: center;
@@ -209,7 +210,7 @@
 @media screen and (min-width: $tablet) {
     .your-order-modal {
         width: 704px;
-        max-height: calc(100vh - 20px);
+        max-height: calc(100vh - 40px);
         background-image: url("../images/your-order-girl-tablet.webp"), url("../images/your-order-girl-tablet@2x.webp");
         background-size: 469px 467px;
         background-position: right -179px bottom -3px;
@@ -300,6 +301,7 @@
 @media screen and (min-width: $desktop) {
     .your-order-modal {
         width: 891px;
+        max-height: calc(100vh - 20px);
         background-image: url("../images/your-order-girl-desktop.webp"), url("../images/your-order-girl-desktop@2x.webp");
         background-size: 471px 458px;
         background-position: right 0 bottom 0;
