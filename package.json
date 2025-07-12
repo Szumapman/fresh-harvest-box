@@ -11,10 +11,13 @@
         "deploy": "gh-pages -d dist"
     },
     "devDependencies": {
+        "@parcel/transformer-sass": "^2.15.4",
         "@vituum/vite-plugin-posthtml": "^1.1.0",
         "gh-pages": "^6.3.0",
         "modern-normalize": "^3.0.1",
+        "posthtml-include": "^2.0.1",
         "sass": "^1.89.2",
         "vite": "^6.3.5"
-    }
+    },
+    "homepage": "https://szumapman.github.io/fresh-harvest-box"
 }
